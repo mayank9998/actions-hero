@@ -3,6 +3,7 @@ name: Comment on the workflow issues
 on:
   issues: 
     types: [oepned]
+  workflow_dispatch:
 
 jobs:
   commentissues:
