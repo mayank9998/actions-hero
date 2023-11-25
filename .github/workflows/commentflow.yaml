@@ -2,7 +2,7 @@ name: Comment on the workflow issues
 
 on:
   issues: 
-    type: [oepned]
+    types: [oepned]
 
 jobs:
   commentissues:
