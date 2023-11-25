@@ -1,0 +1,14 @@
+name: Comment on the workflow issues
+
+on:
+  issues: 
+    type: [oepned]
+
+jobs:
+  commentissues:
+    runs-on: ubuntu:latest
+    steps:
+      - name: "dump githhub context"
+        run: echo ' {{toJson(github.event) }}' | jq
+        shell: bash
+  
